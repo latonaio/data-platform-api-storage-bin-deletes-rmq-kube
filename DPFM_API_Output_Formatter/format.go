@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func StorageBin(rows *sql.Rows) (*General, error) {
+func ConvertToGeneral(rows *sql.Rows) (*General, error) {
 	defer rows.Close()
 	general := General{}
 	i := 0
